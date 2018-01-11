@@ -11,9 +11,9 @@ def test_only_unicode_accepted():
     """ Non-Unicode strings raise a ValueError.
     """
     sentences = [
-        u'Hello world',
-        u'I am unicode',
-        'I am not unicode',
+        'Hello world',
+        'I am unicode',
+        b'I am not unicode',
     ]
 
     wg = WordGenerator(sentences)
